@@ -3,11 +3,11 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        double x = 1.86; //рост
-        System.out.println("Ваш рост:" + x);
-        double y = 98; //вес
-        System.out.println("Ваш вес:" + y);
-        double bmiIndex = service.calculate(x, y);
-        System.out.println("Индекс массы тела:" + bmiIndex);
+        double height = 1.86; //рост
+        System.out.println("Ваш рост:" + height);
+        double weight = 73; //вес
+        System.out.println("Ваш вес:" + weight);
+        double index = service.calculate(weight, height);
+        System.out.println("Индекс массы тела:" + index);
     }
 }
